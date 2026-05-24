@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm Management — Question Paper (Set A &amp; B)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- ── Header ── -->
+    <header class="paper-header">
+      <div class="dept-label">Department of Agricultural Economics</div>
+      <h1 class="paper-title">Farm Management, Production Economics &amp; Resource Economics</h1>
+      <div class="meta-grid">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          3 Hours
+        </span>
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          Maximum Marks: 80
+        </span>
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+          Two Sets &mdash; No question repeated across sets
+        </span>
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          Subject: Farm Management
+        </span>
+      </div>
+    </header>
+
+    <!-- ── Set Tabs ── -->
+    <div class="tab-row" role="tablist" aria-label="Question paper sets">
+      <button class="tab-btn active" data-set="A" onclick="switchSet('A')" role="tab" aria-selected="true">
+        Set A
+      </button>
+      <button class="tab-btn" data-set="B" onclick="switchSet('B')" role="tab" aria-selected="false">
+        Set B
+      </button>
+    </div>
+
+    <!-- ── Set A ── -->
+    <div id="setA" class="set-panel active" role="tabpanel" aria-label="Set A"></div>
+
+    <!-- ── Set B ── -->
+    <div id="setB" class="set-panel" role="tabpanel" aria-label="Set B"></div>
+
+  </div>
+
+  <!-- Data must be loaded before script -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
